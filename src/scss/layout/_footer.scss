@@ -1,0 +1,139 @@
+.footer {
+  position: relative;
+  height: 18em;
+  background-color: $color-dark-grey;
+
+  &__evolve--logo {
+    position: absolute;
+    width: 15%;
+    bottom: 52%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+    padding-top: 20px;
+    color: $color-white;
+    font-size: 0.6rem;
+    width: 100%;
+    background-color: rgba($color-black, 0.2);
+  }
+
+  &__fusion--logo {
+    width: 15%;
+    position: absolute;
+    right: 10%;
+    bottom: 50%;
+  }
+
+  &__icons {
+    position: absolute;
+    left: 10%;
+    bottom: 43%;
+    font-family: Arvo;
+    font-weight: 300;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+
+    &--head {
+      color: $color-white;
+      display: block;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+  }
+}
+
+.fusion-logo {
+  height: 65px;
+}
+
+.social-footer {
+  text-align: left;
+  height: 40px;
+  border: 0;
+  margin-bottom: 7%;
+  margin-right: -18px;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 720px) {
+  .footer {
+    &__fusion--logo {
+      top: 24%;
+      z-index: 2;
+      right: 0;
+      transform: translate(-50%);
+    }
+
+    &__evolve--logo {
+      width: 30%;
+      bottom: 48%;
+    }
+
+    &__icons {
+      bottom: 41%;
+      font-family: Arvo;
+      font-weight: 300;
+      font-size: 6pt;
+      letter-spacing: 2px;
+    }
+  }
+
+  .social-footer {
+    height: 40px;
+    border: 0;
+    margin-bottom: 4%;
+    margin-right: -21px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .footer {
+    height: 66em;
+
+    &__fusion--logo {
+      width: 30%;
+      top: 22%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &__evolve--logo {
+      position: absolute;
+      width: 80%;
+      bottom: 81%;
+      z-index: 2;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    &__icons {
+      left: 25%;
+      bottom: 11%;
+      font-size: 10pt;
+    }
+  }
+
+  .social-footer {
+    height: 76px;
+    border: 0;
+    margin-bottom: 4%;
+    margin-right: -27px;
+  }
+
+  .evolve-logo {
+    height: 90px;
+  }
+
+  .fusion-logo {
+    height: 80px;
+  }
+}

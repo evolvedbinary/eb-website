@@ -1,0 +1,97 @@
+.Navbar {
+  display: none;
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .Navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: $color-light-blue;
+    display: block;
+    transition: all 0.3s ease-out;
+
+    &__Items {
+      opacity: 0;
+      transform: scale(1.2);
+      transition: all 1s ease;
+      z-index: -10;
+      position: relative;
+    }
+
+    &__ToggleShow {
+      background-color: $color-white;
+      padding: 2em 0;
+      opacity: 1;
+      z-index: 20;
+      transform: scale(1);
+    }
+
+    &__Link-toggle {
+      position: relative;
+      cursor: pointer;
+    }
+
+    &__Link {
+      padding: 1em 2em;
+      transition: all 3s ease-out;
+
+      a {
+        font-size: 2.2em;
+        font-family: arvo;
+        text-transform: uppercase;
+        color: $color-light-blue;
+        font-weight: 300;
+        margin: 0.5em 0;
+        letter-spacing: 1px;
+        transition: all 1s ease;
+
+        &:hover {
+          color: $color-blue;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__burger {
+      z-index: 30;
+      width: 50px;
+      height: 36px;
+      color: $color-light-blue;
+      right: 35px;
+      top: 35px;
+      position: absolute;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 5px;
+        background-color: $color-light-blue;
+      }
+
+      &__middle {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        width: 50px;
+        height: 5px;
+        background-color: $color-light-blue;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 5px;
+        background-color: $color-light-blue;
+      }
+    }
+  }
+}

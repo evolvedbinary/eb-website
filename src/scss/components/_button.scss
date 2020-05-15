@@ -1,0 +1,160 @@
+.btn {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 0;
+    padding: 9px 15px 8px 15px;
+    transition: all 0.2s;
+    position: relative;
+    font-family: Lato;
+    font-weight: 300;
+    margin-right: 0.5em;
+    letter-spacing: 1px;
+  }
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.5) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-primary;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &--green {
+    background-color: $color-green;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-green;
+    }
+  }
+
+  &--blue {
+    background-color: $color-blue;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-blue;
+    }
+  }
+
+  &--red {
+    background-color: $color-red;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-red;
+    }
+  }
+
+  &--light-blue {
+    background-color: $color-light-blue;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-light-blue;
+    }
+  }
+
+  &--light-red {
+    background-color: $color-light-red;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-light-red;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .btn {
+    &:link,
+    &:visited {
+      font-size: 9px;
+      padding: 10px 10px;
+    }
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 720px) {
+  .btn {
+    &:link,
+    &:visited {
+      font-size: 10px;
+      padding: 12px 12px;
+      display: inline-block;
+    }
+  }
+  a.btn.btn--white {
+    margin: 0% 66% 0%;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .btn {
+    &:link,
+    &:visited {
+      font-size: 19px;
+      padding: 12px 12px;
+      margin: 1em 0;
+    }
+  }
+  a.btn.btn--white {
+    margin: 0% 40% 0%;
+  }
+}
+
+@media only screen and (max-width : 375px) {
+  a.btn.btn--white {
+    margin: 0% 33% 0%;
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+  .btn {
+    &:link,
+    &:visited {
+      font-size: 10px;
+      padding: 12px 12px;
+    }
+  }
+
+  a.btn.btn--white {
+    margin: 0% 29% 0%;
+  }
+}

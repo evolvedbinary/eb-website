@@ -1,0 +1,154 @@
+.main {
+  margin: 0 21%;
+
+  // /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
+    margin: 0 2%;
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 480px) {
+    margin: 0 2%;
+  }
+}
+
+.shape {
+  width: 1em;
+  margin-right: 0.5em;
+  margin-left: -1.5em;
+}
+
+.shape-small {
+  width: 0.8em;
+  margin-left: -1em;
+}
+
+.services,
+.publications,
+.fusiondb {
+  &--pt {
+    padding-top: 2em;
+  }
+
+  @media only screen and (max-width : 480px) {
+    &--pt {
+      padding-top: 0;
+    }
+  }
+
+  &--pb {
+    padding-bottom: 0.5em;
+  }
+}
+
+.publications {
+  &__menu {
+    ul {
+      list-style-type: none;
+      padding: 0 px;
+      display: block;
+      justify-content: center;
+    }
+
+    li a {
+      color: $color-text;
+      display: block;
+      padding: 0;
+      font-family: Arvo;
+      font-weight: 700;
+      font-size: 12pt;
+      letter-spacing: 2px;
+      text-transform: lowercase;
+
+      &:hover {
+        color: $color-light-blue;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 480px) {
+    li a {
+      font-size: 1.3rem;
+      padding: 0.3em 0;
+    }
+  }
+}
+
+.read-more {
+  padding-top: 1em;
+
+  a {
+    color: $color-text;
+    font-family: Arvo;
+    font-weight: 400;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-light-blue;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 480px) {
+    a {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.fusiondb {
+  position: relative;
+  display: block;
+
+  &__textblock {
+    width: 68%;
+
+    // /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      width: 100%;
+      padding-top: 2em;
+    }
+  }
+
+  &__db-illustration {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top: 3em;
+    right: 0;
+    width: 28em;
+
+    // /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      display: none;
+    }
+  }
+
+  .main-area__form--button {
+    text-align: left;
+    padding: 22px 0;
+  }
+}
+
+.fusiondb-logo {
+  width: 7em;
+
+  // /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
+    width: 11em;
+    padding-left: 2em;
+    margin-bottom: -1em;
+  }
+}
+
+.FusionDB.Github {
+  width: 2em;
+  padding-left: 0.6em;
+}

@@ -1,0 +1,59 @@
+.top-icons {
+  position: relative;
+  margin: 2%;
+  display: block;
+
+  &__social {
+    position: absolute;
+    top: 5%;
+    width: 5em;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 5%;
+    right: 0%;
+    width: 6.5em;
+  }
+}
+
+.banner {
+  padding: 0;
+  background-color: $color-white;
+  margin: 0 4em;
+
+  &__evlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: -9%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .banner {
+    margin: 0 3em;
+
+    &__evlogo {
+      width: 92%;
+      margin-top: -9%;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .top-icons {
+    display: none;
+  }
+
+  .banner {
+    margin: 120px 0 0 0;
+
+    &__evlogo {
+      width: 92%;
+    }
+  }
+}
