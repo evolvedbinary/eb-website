@@ -1,5 +1,7 @@
 # Evolved Binary Website
 
+[![Build Status](https://travis-ci.com/evolvedbinary/eb-website.png?branch=master)](https://travis-ci.com/evolvedbinary/eb-website)
+
 These are the files that generate the https://www.evolvedbinary.com website.
 
 ## Getting Started
