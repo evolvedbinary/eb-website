@@ -6,7 +6,9 @@ const stylesTask = require('./styles')
 const scriptsTask = require('./scripts')
 
 const SRC_PATH = 'src';
+const DIST_PATH = 'dist';
 const SCRIPTS_PATH = SRC_PATH + '/scripts/**/*.js';
+const STYLES_PATH = SRC_PATH + '/scss/**/*.scss';
 
 
 function watchFn() {
@@ -14,7 +16,7 @@ function watchFn() {
   browserSync.init({
     notify: false,
     server: {
-      baseDir: SRC_PATH
+      baseDir: DIST_PATH
     }
   });
 
@@ -30,7 +32,7 @@ function watchFn() {
   watch(SCRIPTS_PATH, scriptsTask.build);
   
   // gulp.watch(CSS_PATH, ['styles']);
-  watch(SRC_PATH + '/scss/**/*.scss', stylesTask.build);
+  watch(STYLES_PATH, stylesTask.build);
 
 }
 
