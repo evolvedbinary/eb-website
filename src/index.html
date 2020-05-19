@@ -204,28 +204,31 @@
 
           <h3><a name="contact"/><img class="shape" src="dist/images/icons/shape-icon.svg" alt="Shape">Get in Touch</h3>
 
+          <form method="POST" action="https://formspree.io/hello@evolvedbinary.com">
+            <input type="hidden" name="source" value="www.evolvedbinary.com">
+
             <div class="top-form">
 
               <div class="inner-form">
                 <div class="label">Enter your Name</div>
-                <input type="text" placeholder="Enter your Name" style="opacity: 0.4;">
+                <input type="text" name="name" placeholder="Enter your Name" style="opacity: 0.4;">
               </div>
 
               <div class="inner-form">
                 <div class="label">Enter your Email</div>
-                <input type="text" placeholder="Enter your Email" style="opacity: 0.4;">
+                <input type="text" name="_replyto" placeholder="Enter your Email" style="opacity: 0.4;">
               </div>
             </div>
 
             <div class="middle-form">
               <div class="inner-form">
                 <div class="label">Enter your Company</div>
-                <input type="text" placeholder="Enter your Company" style="opacity: 0.4;">
+                <input type="text" name="company" placeholder="Enter your Company" style="opacity: 0.4;">
               </div>
 
               <div class="inner-form">
                 <div class="label">Enter your Telephone Number</div>
-                <input type="text" placeholder="Enter your Telephone Number" style="opacity: 0.4;">
+                <input type="text" name="telephone" placeholder="Enter your Telephone Number" style="opacity: 0.4;">
               </div>
 
             </div><!-- .top-form -->
@@ -233,13 +236,16 @@
             <div class="bottom-form">
               <div class="bottom-form__inner">
                 <div class="label">Your message</div>
-                <textarea placeholder="" style="opacity: 0.4;"></textarea>
+                <textarea name="message" placeholder="" style="opacity: 0.4;"></textarea>
               </div><!-- .bottom-form__inner -->
             </div><!-- .bottom-form -->
 
             <div class="main-area__form--button">
               <a href="#" class="btn btn--light-blue">SEND</a>
+              <!-- input type="submit" value="Send" class="special" -->
             </div><!-- .bottom-form__inner -->
+
+          </form>
 
           </div><!-- main-area__form-->
       </div><!-- main-area-->
