@@ -1,5 +1,5 @@
 img.banner {
-  &__evlogo-careers {
+  &__evlogo-contentpage {
     margin-left: 33%;
     width: 35%;
     margin-top: -4%;
@@ -7,7 +7,7 @@ img.banner {
 
   // /* Small Devices, Tablets */
   @media only screen and (max-width : 768px) {
-    &__evlogo-careers {
+    &__evlogo-contentpage {
       margin-left: 16%;
       width: 70%;
       margin-top: -13%;
@@ -16,7 +16,7 @@ img.banner {
 
   //* Extra Small Devices, Phones */
   @media only screen and (max-width : 480px) {
-    &__evlogo-careers {
+    &__evlogo-contentpage {
       margin-left: 16%;
       width: 70%;
       margin-top: -13%;
@@ -25,7 +25,7 @@ img.banner {
 }
 
 .main {
-  &__careers {
+  &__contentpage {
     margin-bottom: 5em;
   }
 }
