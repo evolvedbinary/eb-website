@@ -24,6 +24,12 @@ function techReportsFn() {
     .pipe(dest(DIST_PATH));
 }
 
+// copy the Jobs
+function techReportsFn() {
+  return src(SRC_PATH + "/jobs*/**/*")
+    .pipe(dest(DIST_PATH));
+}
+
 // other static resorces
 function othersFn() {
   return src(SRC_PATH + "/LICENSE.txt")
