@@ -4,6 +4,7 @@ const livereload = require('gulp-livereload');
 
 const stylesTask = require('./styles')
 const scriptsTask = require('./scripts')
+const staticsTask = require('./statics');
 
 const SRC_PATH = 'src';
 const DIST_PATH = 'dist';
@@ -21,6 +22,7 @@ function watchFn() {
   });
 
   function watchIndexFn() {
+    staticsTask.build();
     browserSync.reload();
   }
 
