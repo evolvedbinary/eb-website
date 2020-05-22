@@ -18,6 +18,12 @@ function techReportsFn() {
     .pipe(dest(DIST_PATH));
 }
 
+// copy the Publications
+function techReportsFn() {
+  return src(SRC_PATH + "/publications*/**/*")
+    .pipe(dest(DIST_PATH));
+}
+
 // other static resorces
 function othersFn() {
   return src(SRC_PATH + "/LICENSE.txt")
