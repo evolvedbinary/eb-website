@@ -17,6 +17,7 @@
   }
 }
 
+
 .banner {
   padding: 0;
   background-color: $color-white;
@@ -26,8 +27,29 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 60%;
     margin-top: -9%;
+  }
+
+  &__intro {
+    padding-bottom: 2em;
+    margin: 0 2em;
+
+    h1 {
+      color: $color-text;
+      font-family: Arvo;
+      font-weight: 400;
+      font-size: 2rem;
+      line-height: 1.4em;
+      text-align: center;
+      padding-top: 50px;
+      text-transform: uppercase;
+
+      /* Extra Small Devices, Phones */
+      @media only screen and (max-width : 480px) {
+        margin: 0 0.5em;
+      }
+    }
   }
 }
 
