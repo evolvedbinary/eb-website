@@ -48,6 +48,14 @@
   &__copyright {
     text-align: center;
   }
+
+  &__craig {
+    margin-top: 0.5em;
+
+    a {
+      color: $color-white;
+    }
+  }
 }
 
 .fusion-logo {
@@ -59,7 +67,11 @@
   height: 40px;
   border: 0;
   margin-bottom: 7%;
-  margin-right: -18px;
+  margin-right: -16px;
+
+  &--mail {
+    padding-left: 1px;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -85,6 +97,7 @@
       letter-spacing: 2px;
     }
   }
+
 
   .social-footer {
     height: 40px;
@@ -117,8 +130,9 @@
 
     &__icons {
       left: 25%;
-      bottom: 11%;
+      bottom: 6%;
       font-size: 10pt;
+      position: absolute;
     }
   }
 

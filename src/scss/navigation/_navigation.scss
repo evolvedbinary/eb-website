@@ -8,7 +8,7 @@ ul {
 li a {
   color: $color-text;
   display: block;
-  padding: 25px 26px;
+  padding: 40px 13px;
   font-family: Arvo;
   font-weight: 400;
   font-size: 12pt;
@@ -46,8 +46,10 @@ li a {
   }
 }
 
+
 .menu {
   display: block;
+  padding-bottom: 2em;
 
   @media only screen and (max-width : 480px) {
     display: none;
@@ -60,7 +62,7 @@ li a {
   @media only screen and (max-width : 480px) {
     position: absolute;
     display: block;
-    padding-top: 24em;
+    padding-top: 20em;
     text-align: center;
     z-index: 10;
     transform: translate(-50%);

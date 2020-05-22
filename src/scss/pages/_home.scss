@@ -12,6 +12,10 @@
   }
 }
 
+.main p {
+  padding-bottom: 1em;
+}
+
 .shape {
   width: 1em;
   margin-right: 0.5em;
@@ -45,7 +49,7 @@
   &__menu {
     ul {
       list-style-type: none;
-      padding: 0 px;
+      margin-bottom: 1em;
       display: block;
       justify-content: center;
     }
@@ -53,7 +57,7 @@
     li a {
       color: $color-text;
       display: block;
-      padding: 0;
+      padding: 0.2em 0;
       font-family: Arvo;
       font-weight: 700;
       font-size: 12pt;
@@ -78,7 +82,7 @@
 }
 
 .read-more {
-  padding-top: 1em;
+  // padding-top: 1em;
 
   a {
     color: $color-text;
