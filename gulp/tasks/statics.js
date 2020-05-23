@@ -19,13 +19,13 @@ function techReportsFn() {
 }
 
 // copy the Publications
-function techReportsFn() {
+function publicationsFn() {
   return src(SRC_PATH + "/publications*/**/*")
     .pipe(dest(DIST_PATH));
 }
 
 // copy the Jobs
-function techReportsFn() {
+function jobsFn() {
   return src(SRC_PATH + "/jobs*/**/*")
     .pipe(dest(DIST_PATH));
 }
@@ -39,6 +39,8 @@ function othersFn() {
 staticsFn = parallel(
     htmlFn,
     techReportsFn,
+    publicationsFn,
+    jobsFn,
     othersFn
 );
 
