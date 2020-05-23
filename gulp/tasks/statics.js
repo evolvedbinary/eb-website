@@ -7,26 +7,26 @@ const DIST_PATH = 'dist';
 
 // copy HTML resources
 function htmlFn() {
-  return src(SRC_PATH + "/**.html")
+  return src(SRC_PATH + "/**/*.html")
     .pipe(replace('dist/', ''))
     .pipe(dest(DIST_PATH));
 }
 
 // copy the Technical Reports
 function techReportsFn() {
-  return src(SRC_PATH + "/technical-reports*/**/*")
+  return src(SRC_PATH + "/technical-reports*/**/*", { ignore: "**/*.html" })
     .pipe(dest(DIST_PATH));
 }
 
 // copy the Publications
 function publicationsFn() {
-  return src(SRC_PATH + "/publications*/**/*")
+  return src(SRC_PATH + "/publications*/**/*", { ignore: "**/*.html" })
     .pipe(dest(DIST_PATH));
 }
 
 // copy the Jobs
 function jobsFn() {
-  return src(SRC_PATH + "/jobs*/**/*")
+  return src(SRC_PATH + "/jobs*/**/*", { ignore: "**/*.html" })
     .pipe(dest(DIST_PATH));
 }
 
