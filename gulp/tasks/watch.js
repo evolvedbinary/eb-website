@@ -27,8 +27,7 @@ function watchFn() {
   }
 
   watch(SRC_PATH + '/index.html', watchIndexFn);
-  
-  require('../../server.js');
+
   livereload.listen();
 
   watch(SCRIPTS_PATH, scriptsTask.build);

@@ -7,6 +7,7 @@ const staticsTask = require('./gulp/tasks/statics');
 const spritesTask = require('./gulp/tasks/sprites');
 const watchTask = require('./gulp/tasks/watch');
 const cleanTask = require('./gulp/tasks/clean');
+const serverTask = require('./gulp/tasks/server');
 
 task('images', imagesTask.build);
 task('scripts', scriptsTask.build);
@@ -23,6 +24,7 @@ const assetsFn = parallel(
 );
 task('assets', assetsFn);
 
+task('server', series(assetsFn, serverTask.build));
 task('watch', series(assetsFn, watchTask.build));
 
 task('default', assetsFn);
