@@ -5,6 +5,7 @@
   "description": "Website for www.evolvedbinary.com",
   "main": "index.js",
   "scripts": {
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,7 +13,14 @@
     "url": "git+https://github.com/evolvedbinary/eb-website.git"
   },
   "keywords": [
-    "Research"
+    "Consultancy",
+    "Development",
+    "Research",
+    "Database",
+    "Storage",
+    "Query",
+    "Digital Preservation",
+    "Digital Archiving"
   ],
   "author": "craig steel design",
   "license": "UNLICENSED",
