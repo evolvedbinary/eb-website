@@ -28,6 +28,19 @@ b {
   }
 }
 
+h1 {
+  color: $color-text;
+  font-family: Arvo;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.4em !important;
+  text-align: center;
+  padding-top: 50px;
+  text-transform: uppercase;
+  padding-bottom: 1em;
+  margin: 0 2em;
+}
+
 h2 {
   text-align: center;
   font-size: 1.3rem;
@@ -99,4 +112,3 @@ h5 {
     font-size: 1.1em;
   }
 }
-

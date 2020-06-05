@@ -6,7 +6,7 @@
   &__evolve--logo {
     position: absolute;
     width: 15%;
-    bottom: 52%;
+    bottom: 49%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -56,6 +56,12 @@
       color: $color-white;
     }
   }
+
+  &__dark {
+    background-image: url(images/EB_After_Dark_footer.jpg);
+    background-size: cover;
+    background-position: top;
+  }
 }
 
 .fusion-logo {
@@ -69,8 +75,17 @@
   margin-bottom: 7%;
   margin-right: -16px;
 
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 480px) {
+    height: 65px;
+  }
+
   &--mail {
     padding-left: 1px;
+  }
+
+  &--github {
+    margin-left: -1px;
   }
 }
 
@@ -98,12 +113,9 @@
     }
   }
 
-
   .social-footer {
-    height: 40px;
-    border: 0;
     margin-bottom: 4%;
-    margin-right: -21px;
+    margin-right: -24px;
   }
 }
 
@@ -116,16 +128,14 @@
       width: 30%;
       top: 22%;
       left: 50%;
-      transform: translate(-50%);
+      // transform: translate(-50%);
     }
 
     &__evolve--logo {
       position: absolute;
       width: 80%;
       bottom: 81%;
-      z-index: 2;
       left: 50%;
-      transform: translate(-50%);
     }
 
     &__icons {
@@ -134,13 +144,6 @@
       font-size: 10pt;
       position: absolute;
     }
-  }
-
-  .social-footer {
-    height: 76px;
-    border: 0;
-    margin-bottom: 4%;
-    margin-right: -27px;
   }
 
   .evolve-logo {

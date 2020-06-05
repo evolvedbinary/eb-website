@@ -1,0 +1,48 @@
+.main {
+  &__dark {
+    padding: 2em 0;
+  }
+
+  &__dark-text {
+    color: $color-white;
+    font-family: Arvo;
+  }
+
+  &__dark-text-white {
+    color: $color-white;
+  }
+
+  &__dark-a {
+    color: $color-light-blue;
+  }
+}
+
+
+.tablesorter-default {
+  margin: 0 !important;
+  padding-bottom: 3em;
+}
+
+.tablesorter-default .header,
+.tablesorter-default .tablesorter-header {
+  background-image: none !important;
+}
+
+.tablesorter-default th,
+.tablesorter-default thead td {
+  color: #fff !important;
+  background-color: #00142d !important;
+  border-bottom: #ccc 1px solid !important;
+}
+
+.tablesorter-default td {
+  color: #fff !important;
+  background-color: #00142d !important;
+  border-bottom: #ccc 1px solid !important;
+}
+
+.tablesorter-default thead .headerSortDown,
+.tablesorter-default thead .tablesorter-headerDesc,
+.tablesorter-default thead .tablesorter-headerSortDown {
+  border-bottom: $color-light-blue 2px solid !important;
+}

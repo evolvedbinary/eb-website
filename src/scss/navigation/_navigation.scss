@@ -14,13 +14,14 @@ li a {
   font-size: 12pt;
   letter-spacing: 2px;
   text-transform: uppercase;
-  // text-decoration: none;
+  text-decoration: none;
 
   &:hover {
     color: $color-blue;
     font-weight: 700;
   }
 }
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
@@ -53,6 +54,13 @@ li a {
 
   @media only screen and (max-width : 480px) {
     display: none;
+  }
+
+  &__dark {
+    li a {
+      color: $color-white;
+      text-decoration: none;
+    }
   }
 }
 
