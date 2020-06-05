@@ -1,6 +1,11 @@
 .wrapper {
   margin: 0 auto;
-  padding: 0 1rem;
+  // padding: 0 1rem;
+
+  &__dark {
+    background-color: $color-background;
+    padding-bottom: 7em;
+  }
 
   /* Extra Small Devices, Phones */
   @media only screen and (max-width : 480px) {

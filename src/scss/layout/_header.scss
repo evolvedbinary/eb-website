@@ -1,7 +1,10 @@
 .top-icons {
   position: relative;
-  margin: 2%;
   display: block;
+
+  &__icons {
+    padding: 2em 3em;
+  }
 
   &__social {
     position: absolute;
@@ -11,59 +14,101 @@
 
   &__logo {
     position: absolute;
-    top: 5%;
-    right: 0%;
+    top: 20%;
+    right: 3%;
     width: 6.5em;
   }
 }
 
 
 .banner {
-  padding: 0;
-  background-color: $color-white;
-  margin: 0 4em;
+  position: relative;
+
+  &__dark {
+    background-image: url(images/EB_After_Dark_banner.jpg);
+    background-size: cover;
+    background-position: top;
+  }
 
   &__evlogo {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 55%;
     margin-top: -9%;
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      width: 80%;
+      margin-top: 0;
+      padding-top: 4.5em;
+    }
+  }
+
+  &__introdark {
+    color: $color-white;
+    font-family: Arvo;
+    font-weight: 400;
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    margin: 0 3em;
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      margin: 0 2em;
+    }
+  }
+
+  &__darksub {
+    text-align: center;
+    color: $color-white;
+    font-family: Arvo;
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    margin: 0 7em;
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      margin: 0 0.5em;
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      // margin: 0 0.5em;
+    }
   }
 
   &__intro {
-    padding-bottom: 2em;
-    margin: 0 2em;
+    color: $color-text;
+    font-family: Arvo;
+    margin: 0 3em;
 
-    h1 {
-      color: $color-text;
-      font-family: Arvo;
-      font-weight: 400;
-      font-size: 2rem;
-      line-height: 1.4em;
-      text-align: center;
-      padding-top: 50px;
-      text-transform: uppercase;
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      margin: 0 0.5em;
+    }
 
-      /* Extra Small Devices, Phones */
-      @media only screen and (max-width : 480px) {
-        margin: 0 0.5em;
-      }
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+      // margin: 0 0.5em;
     }
   }
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
-  .banner {
-    margin: 0 3em;
+// @media only screen and (max-width : 768px) {
+//   .banner {
+//     // margin: 0 3em;
 
-    &__evlogo {
-      width: 92%;
-      margin-top: -9%;
-    }
-  }
-}
+//     &__evlogo {
+//       width: 92%;
+//       margin-top: -9%;
+//     }
+//   }
+// }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
@@ -71,11 +116,12 @@
     display: none;
   }
 
-  .banner {
-    margin: 120px 0 0 0;
+  // .banner {
+  //   // margin: 120px 0 0 0;
 
-    &__evlogo {
-      width: 92%;
-    }
-  }
+  //   &__evlogo {
+  //     width: 92%;
+  //     margin-top: 4em;
+  //   }
+  // }
 }
