@@ -7,7 +7,7 @@ const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 
 //File paths
 const DIST_PATH = 'dist';
-const IMAGES_PATH = 'src/images/**/*.{png,jpeg,jpg,svg,gif,xml,ico,jason}';
+const IMAGES_PATH = 'src/images/**/*.{png,jpeg,jpg,svg,gif,ico,xml,jason}';
 
 // Images
 function imagesFn() {
