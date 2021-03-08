@@ -9,24 +9,24 @@
   <meta name="description" content="Contact Evolved Binary">
 
   <link href="https://fonts.googleapis.com/css?family=Arvo:300,400,700|Lato:300,400,700,900|Montserrat:300,400,500,700&display=swap&subset=latin-ext" rel="stylesheet"type='text/css'>
-  <link rel="stylesheet" href="dist/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <!-- favicon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="dist/images/eb-favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="dist/images/eb-favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="dist/images/eb-favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="dist/images/eb-favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="dist/images/eb-favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="dist/images/eb-favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="dist/images/eb-favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="dist/images/eb-favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/eb-favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="dist/images/eb-favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/eb-favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="dist/images/eb-favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/eb-favicon/favicon-16x16.png">
-    <link rel="manifest" href="dist/images/eb-favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/eb-favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/eb-favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/eb-favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/eb-favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/eb-favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/eb-favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/eb-favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/eb-favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/eb-favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/eb-favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/eb-favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/eb-favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/eb-favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/eb-favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="dist/images/eb-favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="images/eb-favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
   <!-- favicon-end-->
 
@@ -36,46 +36,33 @@
 
 <div class="banner">
   <header class="header">
-    <!-- mobile-menu-->
-    <div class="Navbar">
 
-      <div class="Navbar__Link Navbar__Link-toggle">
-        <div class="Navbar__burger">
-          <div class="Navbar__burger__middle"></div>
+      <!-- mobile-menu-->
+      <div class="mobile-menu">
+        <input type="checkbox" id="overlay-input" />
+        <label for="overlay-input" id="overlay-button"><span></span></label>
+        <div id="overlay">
+          <ul>
+            <li><a href="index.html" alt="link to Evolved Binary Home page">Home</a></li>
+            <!-- <li><a href="#about" alt="link to About section">About</a></li>
+                          <li><a href="#services" alt="link to Service section">Services</a></li> -->
+            <li><a href="https://fusiondb.com" alt="link to fusionDB">FusionDB</a></li>
+            <li><a href="afterdark.html" alt="link to Afterdark page">Afterdark</a></li>
+            <li><a href="publications.html" alt="link to Publications page">Publications</a></li>
+            <!-- <li><a href="#exist-db-support" alt="link to exist-db-support section">eXist-db</a></li> -->
+            <li><a href="careers.html" alt="link to Careers page">Careers</a></li>
+            <li><a href="contact.html" alt="link to Contact page">Contact</a></li>
+            <li><a href="https://twitter.com/fdbnosql"><img src="images/icons/ev-twitter-icon.svg"
+                  alt="link to FusionDB on Twitter" class="social-footer"></a>
+              <a href="https://github.com/evolvedbinary"><img src="images/icons/ev-github-icon.svg"
+                  alt="link to EvolvedBinary's Github" class="social-footer social-footer--github"></a>
+              <a href="mailto:hello@evolvedbinary.com"><img src="images/icons/ev-email-icon.svg" alt="link to email"
+                  class="social-footer social-footer--mail"></a>
+            </li>
+          </ul>
         </div>
-
       </div>
-      <nav class="Navbar__Items">
-        <div class="Navbar__Link">
-          <a href="index.html">Home</a>
-        </div>
-        <div class="Navbar__Link">
-          <a href="index.html#about">About</a>
-        </div>
-        <div class="Navbar__Link">
-          <a href="index.html#services">Services</a>
-        </div>
-        <div class="Navbar__Link">
-          <a href="https://fusiondb.com">FusionDB</a>
-        </div>
-        <div class="Navbar__Link">
-          <a href="afterdark.html">After Dark</a>
-        </div>
-        <div class="Navbar__Link">
-          <a href="publications.html">Publications</a>
-        </div>
-        <div class="Navbar__Link">
-          <a href="index.html#exist-db-support">eXist-db</a>
-        </div>
-        <div class="Navbar__Link">
-          <a href="careers.html">Careers</a>
-        </div>
-        <div class="Navbar__Link">
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-    </div>
-    <!-- mobile-menu-end-->
+      <!-- mobile-menu-end-->
 
     <div class="top-icons">
       <div class="top-icons__icons">
@@ -95,7 +82,7 @@
 
   </header><!-- header-->
 
-        <a href="index.html"><img class="banner__evlogo-small" src="dist/images/icons/ev-logo.svg"
+        <a href="index.html"><img class="banner__evlogo-small" src="images/icons/ev-logo.svg"
             alt="link to Evolved Binary Home page"></a>
 
           <h1 class="banner__intro">CONTACT
@@ -104,7 +91,6 @@
 
         <div class="container">
           <div class="menu">
-            <nav>
               <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#about">About</a></li>
@@ -116,7 +102,6 @@
                 <li><a href="careers.html">Careers</a></li>
                 <li><a href="contact.html">Contact</a></li>
               </ul>
-            </nav>
           </div><!-- menu-->
         </div><!-- container-->
 
@@ -127,14 +112,14 @@
 
       <div class="main__contentpage">
 
-        <h3><img src="dist/images/icons/shape-icon.svg" class="shape" alt="Shape">Contact</h3>
+        <h3><img src="images/icons/shape-icon.svg" class="shape" alt="Shape">Contact</h3>
           <p>
             Evolved Binary Limited is a private British company registered in England and Wales.
             <br/>
             <br/>
           </p>
 
-          <p><img src="dist/images/icons/shape-icon.svg" class="shape-small" alt="Shape Small">
+          <p><img src="images/icons/shape-icon.svg" class="shape-small" alt="Shape Small">
             <b>Email</b><br/>
             <ul style="display: block; list-style-type: circle;">
               <li>General Enquiries: <a href="mailto:hello@evolvedbinary.com">hello@evolvedbinary.com</a></li>
@@ -143,7 +128,7 @@
             </ul>
           </p>
 
-          <p><img src="dist/images/icons/shape-icon.svg" class="shape-small" alt="Shape Small">
+          <p><img src="images/icons/shape-icon.svg" class="shape-small" alt="Shape Small">
             <b>Telephone</b><br/>
             <ul style="display: block; list-style-type: circle;">
               <li style="margin: 0.3em;">Telephone (UK): +44 (0)2032 397 236</li>
@@ -151,7 +136,7 @@
             </ul>
           </p>
 
-          <p><img src="dist/images/icons/shape-icon.svg" class="shape-small" alt="Shape Small">
+          <p><img src="images/icons/shape-icon.svg" class="shape-small" alt="Shape Small">
               <b>Postal Address</b><br/>
               <br/>
               Evolved Binary Ltd<br/>
@@ -163,7 +148,7 @@
               United Kingdom<br/>
             </p>
 
-            <p><img src="dist/images/icons/shape-icon.svg" class="shape-small" alt="Shape Small">
+            <p><img src="images/icons/shape-icon.svg" class="shape-small" alt="Shape Small">
                 <b>Company Details</b><br/>
                 <ul style="display: block; list-style-type: circle;">
                   <li style="margin: 0.3em;">Company Registration Number: 8990269</li>
@@ -181,7 +166,7 @@
 
     <div class="footer">
       <div class="footer__evolve--logo">
-        <a href="index.html"><img class="footer__logo" src="dist/images/icons/ev-logo-white.svg" alt="Link to Evolved Binary Home page"></a>
+        <a href="index.html"><img class="footer__logo" src="images/icons/ev-logo-white.svg" alt="Link to Evolved Binary Home page"></a>
       </div><!-- .footer__fusion--logo -->
 
       <!-- <div class="container"> -->
@@ -202,13 +187,13 @@
         </div><!-- menu-->
 
       <div class="footer__fusion--logo">
-        <a href="https://fusiondb.com/"><img class="fusion-logo" src="dist/images/icons/FusionDB-Logo-white.svg" alt="Link to FusionDB Website"></a>
+        <a href="https://fusiondb.com/"><img class="fusion-logo" src="images/icons/FusionDB-Logo-white.svg" alt="Link to FusionDB Website"></a>
             </div><!-- .footer__evolve--logo -->
 
       <div class="footer__icons">
-        <a href="https://twitter.com/fdbnosql"><img class="social-footer" src="dist/images/icons/ev-twitter-icon.svg" alt="link to FusionDB on Twitter"></a>
-        <a href="https://github.com/evolvedbinary"><img class="social-footer" src="dist/images/icons/ev-github-icon.svg" alt="link to EvolvedBinary's Github"></a>
-        <a href="mailto:hello@evolvedbinary.com"><img class="social-footer" src="dist/images/icons/ev-email-icon.svg" alt="link to email"></a>
+        <a href="https://twitter.com/fdbnosql"><img class="social-footer" src="images/icons/ev-twitter-icon.svg" alt="link to FusionDB on Twitter"></a>
+        <a href="https://github.com/evolvedbinary"><img class="social-footer" src="images/icons/ev-github-icon.svg" alt="link to EvolvedBinary's Github"></a>
+        <a href="mailto:hello@evolvedbinary.com"><img class="social-footer" src="images/icons/ev-email-icon.svg" alt="link to email"></a>
 
         <span class="footer__icons--head">FOLLOW US | CONTACT</span>
       </div><!-- .footer__icons -->
@@ -224,9 +209,6 @@
       </div><!-- .footer__bottom -->
 
     </div><!-- .footer -->
-
-    <script src="dist/scripts.min.js"></script>
-    <!-- <script src="http://localhost:35729/livereload.js"></script> -->
 
   </body>
 </html>

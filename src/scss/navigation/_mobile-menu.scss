@@ -1,99 +1,156 @@
-.Navbar {
+.mobile-menu {
+  display: flex;
+  position: fixed;
+  background-color: rgba($color-white, 0.6);
+  height: 65px;
+  z-index: 2;
+  margin: 0;
+  width: 100%;
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+
+  @media screen and (min-width: $sm) {
+    display: none;
+  }
+}
+
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+
+  to {
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+
+  to {
+    padding: 0;
+  }
+}
+
+#overlay-button {
+  position: absolute;
+  right: 2em;
+  top: 2.3em;
+  padding: 0;
+  z-index: 5;
+  cursor: pointer;
+  user-select: none;
+
+  span {
+    height: 5px;
+    width: 55px;
+    border-radius: 2px;
+    background-color: $color-blue;
+    position: relative;
+    display: block;
+    transition: all 0.2s ease-in-out;
+
+    &:before {
+      top: -14px;
+      visibility: visible;
+    }
+
+    &:after {
+      top: 14px;
+    }
+
+    &:before, &:after {
+      height: 5px;
+      width: 50px;
+      border-radius: 2px;
+      background-color: $color-blue;
+      position: absolute;
+      content: '';
+      transition: all 0.2s ease-in-out;
+    }
+  }
+
+  &:hover span,
+  &:hover span:before,
+  &:hover span:after {
+    background-color: $color-blue;
+  }
+}
+
+input[type=checkbox] {
   display: none;
 }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-  .Navbar {
-    position: fixed;
-    width: 100%;
-    top: 1em;
-    color: $color-light-blue;
-    display: block;
-    z-index: 10;
-    transition: all 0.3s ease-out;
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
 
-    &__Items {
-      opacity: 0;
-      transform: scale(1.2);
-      transition: all 1s ease;
-      z-index: -10;
-      position: relative;
-    }
+input[type=checkbox]:checked ~ #overlay-button {
 
-    &__ToggleShow {
-      background-color: $color-white;
-      padding: 3em 0;
+  &:hover span, span {
+    background: transparent;
+  }
+
+  span {
+    &:before {
+      transform: rotate(45deg) translate(7px, 7px);
       opacity: 1;
-      z-index: 20;
-      transform: scale(1);
-      margin-top: -49px;
     }
 
-
-    &__Link-toggle {
-      position: relative;
-      cursor: pointer;
-    }
-
-    &__Link {
-      padding: 1em 2em;
-      transition: all 3s ease-out;
-
-      a {
-        font-size: 2.2em;
-        font-family: arvo;
-        text-transform: uppercase;
-        color: $color-light-blue;
-        font-weight: 300;
-        margin: 0.5em 0;
-        letter-spacing: 1px;
-        transition: all 1s ease;
-
-        &:hover {
-          color: $color-blue;
-          font-weight: 700;
-          text-decoration: none;
-        }
-      }
-    }
-
-    &__burger {
-      z-index: 30;
-      width: 50px;
-      height: 36px;
-      color: $color-light-blue;
-      right: 35px;
-      position: absolute;
-
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 0;
-        width: 50px;
-        height: 5px;
-        background-color: $color-light-blue;
-      }
-
-      &__middle {
-        position: absolute;
-        top: 15px;
-        left: 0;
-        width: 50px;
-        height: 5px;
-        background-color: $color-light-blue;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 50px;
-        height: 5px;
-        background-color: $color-light-blue;
-      }
+    &:after {
+      transform: rotate(-45deg) translate(7px, -7px);
     }
   }
 }
+
+#overlay {
+  height: 100vh;
+  width: 100vw;
+  background: $color-light-blue;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+
+  &.active {
+    visibility: visible;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 3em 2.5em 0;
+    list-style-type: none;
+
+    @media screen and (min-width: $xs) {
+      padding: 5em 2.5em 0;
+    }
+  }
+
+  li {
+    padding: 1em 0;
+
+    @media screen and (min-width: $xs) {
+      padding: 1.3em 0;
+    }
+  }
+
+  a {
+    @include font-size(26px, 20px, 2px);
+    font-family: Arvo;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+
+    @media screen and (min-width: $xs) {
+      @include font-size(33px, 25px, 2px);
+    }
+
+    &:hover {
+      color: $color-blue;
+    }
+  }
+}
+

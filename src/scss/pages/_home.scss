@@ -1,14 +1,8 @@
 .main {
-  margin: 0 21%;
+  margin: 0 2%;
 
-  // /* Small Devices, Tablets */
-  @media only screen and (max-width : 768px) {
-    margin: 0 2%;
-  }
-
-  /* Extra Small Devices, Phones */
-  @media only screen and (max-width : 480px) {
-    margin: 0 2%;
+  @media screen and (min-width: $md) {
+    margin: 0 21% 5%;
   }
 }
 
@@ -31,12 +25,12 @@
 .publications,
 .fusiondb {
   &--pt {
-    padding-top: 2em;
+    padding-top: 0;
   }
 
-  @media only screen and (max-width : 480px) {
+  @media screen and (min-width: $md) {
     &--pt {
-      padding-top: 0;
+      padding-top: 2em;
     }
   }
 
