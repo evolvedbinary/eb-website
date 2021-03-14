@@ -1,205 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Evolved Binary</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="keywords" content="Research, Development, Consultancy, FusionDB, eXist-db, RocksDB, NoSQL, Information Storage">
-  <meta name="description" content="Evolved Binary - Research, Development, and Consultancy for the future of structured information storage and retrieval">
+  <meta name="keywords"
+    content="Research, Development, Consultancy, FusionDB, eXist-db, RocksDB, NoSQL, Information Storage">
+  <meta name="description"
+    content="Evolved Binary - Research, Development, and Consultancy for the future of structured information storage and retrieval">
 
-  <link href="https://fonts.googleapis.com/css?family=Arvo:300,400,700|Lato:300,400,700,900|Montserrat:300,400,500,700&display=swap&subset=latin-ext" rel="stylesheet"type='text/css'>
+  <link
+    href="https://fonts.googleapis.com/css?family=Arvo:300,400,700|Lato:300,400,700,900|Montserrat:300,400,500,700&display=swap&subset=latin-ext"
+    rel="stylesheet" type='text/css'>
   <link rel="stylesheet" href="styles.css">
   <!-- favicon-->
-    <link rel="apple-touch-icon" sizes="57x57" href="images/eb-favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/eb-favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/eb-favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/eb-favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/eb-favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/eb-favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/eb-favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/eb-favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/eb-favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/eb-favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/eb-favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/eb-favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/eb-favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/eb-favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/eb-favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/eb-favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/eb-favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/eb-favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/eb-favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/eb-favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/eb-favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/eb-favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/eb-favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/eb-favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/eb-favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/eb-favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/eb-favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/eb-favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/eb-favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/eb-favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
   <!-- favicon-end-->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
     integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.0/css/theme.default.min.css"
-  integrity="sha256-0CM6eAXrTy5gBkEPLf0T3kozB1Qdo1KT/EBWA8N3PZo=" crossorigin="anonymous">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.0/css/theme.default.min.css"
+    integrity="sha256-0CM6eAXrTy5gBkEPLf0T3kozB1Qdo1KT/EBWA8N3PZo=" crossorigin="anonymous">
 
 </head>
+
 <body>
-<div class="wrapper wrapper__dark">
+  <div class="wrapper wrapper__dark">
 
-  <div class="banner banner__dark">
+    <div class="banner banner__dark">
 
-    <header class="header">
+      <header class="header">
 
-      <!-- mobile-menu-->
-      <div class="mobile-menu">
-        <input type="checkbox" id="overlay-input" />
-        <label for="overlay-input" id="overlay-button"><span></span></label>
-        <div id="overlay">
-          <ul>
-            <li><a href="index.html" alt="link to Evolved Binary Home page">Home</a></li>
-            <!-- <li><a href="#about" alt="link to About section">About</a></li>
-                          <li><a href="#services" alt="link to Service section">Services</a></li> -->
-            <li><a href="https://fusiondb.com" alt="link to fusionDB">FusionDB</a></li>
-            <li><a href="afterdark.html" alt="link to Afterdark page">Afterdark</a></li>
-            <li><a href="publications.html" alt="link to Publications page">Publications</a></li>
-            <!-- <li><a href="#exist-db-support" alt="link to exist-db-support section">eXist-db</a></li> -->
-            <li><a href="careers.html" alt="link to Careers page">Careers</a></li>
-            <li><a href="contact.html" alt="link to Contact page">Contact</a></li>
-            <li><a href="https://twitter.com/fdbnosql"><img src="images/icons/ev-twitter-icon.svg"
-                  alt="link to FusionDB on Twitter" class="social-footer"></a>
-              <a href="https://github.com/evolvedbinary"><img src="images/icons/ev-github-icon.svg"
-                  alt="link to EvolvedBinary's Github" class="social-footer social-footer--github"></a>
-              <a href="mailto:hello@evolvedbinary.com"><img src="images/icons/ev-email-icon.svg" alt="link to email"
-                  class="social-footer social-footer--mail"></a>
-            </li>
-          </ul>
+        <!-- mobile-menu-->
+        <div class="mobile-menu">
+          <input type="checkbox" id="overlay-input" />
+          <label for="overlay-input" id="overlay-button"><span></span></label>
+          <div id="overlay">
+            <ul>
+              <li><a href="index.html" alt="link to Evolved Binary Home page">Home</a></li>
+              <li><a href="https://fusiondb.com" alt="link to fusionDB">FusionDB</a></li>
+              <li><a href="afterdark.html" alt="link to Afterdark page">Afterdark</a></li>
+              <li><a href="publications.html" alt="link to Publications page">Publications</a></li>
+              <li><a href="careers.html" alt="link to Careers page">Careers</a></li>
+              <li><a href="contact.html" alt="link to Contact page">Contact</a></li>
+              <li><a href="https://twitter.com/fdbnosql"><img src="images/icons/ev-twitter-icon.svg"
+                    alt="link to FusionDB on Twitter" class="social-footer"></a>
+                <a href="https://github.com/evolvedbinary"><img src="images/icons/ev-github-icon.svg"
+                    alt="link to EvolvedBinary's Github" class="social-footer social-footer--github"></a>
+                <a href="mailto:hello@evolvedbinary.com"><img src="images/icons/ev-email-icon.svg" alt="link to email"
+                    class="social-footer social-footer--mail"></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <!-- mobile-menu-end-->
+        <!-- mobile-menu-end-->
 
-      <div class="top-icons">
-        <div class="top-icons__icons">
-          <a href="https://twitter.com/fdbnosql"><img src="images/icons/ev-twitter-icon.svg" alt="link to FusionDB on Twitter" class="social-footer"></a>
-          <a href="https://github.com/evolvedbinary"><img src="images/icons/ev-github-icon.svg" alt="link to EvolvedBinary's Github" class="social-footer social-footer--github"></a>
-          <a href="mailto:hello@evolvedbinary.com"><img src="images/icons/ev-email-icon.svg" alt="link to email" class="social-footer social-footer--mail"></a>
-        </div><!-- top-icons__icons-->
+        <div class="top-icons">
+          <div class="top-icons__icons">
+            <a href="https://twitter.com/fdbnosql"><img src="images/icons/ev-twitter-icon.svg"
+                alt="link to FusionDB on Twitter" class="social-footer"></a>
+            <a href="https://github.com/evolvedbinary"><img src="images/icons/ev-github-icon.svg"
+                alt="link to EvolvedBinary's Github" class="social-footer social-footer--github"></a>
+            <a href="mailto:hello@evolvedbinary.com"><img src="images/icons/ev-email-icon.svg" alt="link to email"
+                class="social-footer social-footer--mail"></a>
+          </div><!-- top-icons__icons-->
 
-        <div class="top-icons__logo">
-          <a href="https://fusiondb.com/"><img src="images/icons/FusionDB-Logo-white.svg" alt="link to the FusionDB Website"></a>
-        </div><!-- top-icons__logo-->
-      </div><!-- top-icons-->
+          <div class="top-icons__logo">
+            <a href="https://fusiondb.com/"><img src="images/icons/FusionDB-Logo-white.svg"
+                alt="link to the FusionDB Website"></a>
+          </div><!-- top-icons__logo-->
+        </div><!-- top-icons-->
 
-    </header><!-- header-->
+      </header><!-- header-->
 
-    <a href="index.html"><img class="banner__evlogo-small" src="images/icons/ev-logo-white.svg"
-        alt="link to Evolved Binary Home page"></a>
+      <a href="index.html"><img class="banner__evlogo-small" src="images/icons/ev-logo-white.svg"
+          alt="link to Evolved Binary Home page"></a>
       <h1 class="banner__introdark">After Dark
       </h1><!-- banner__intro-->
-      <div class="banner__darksub">When the lights go down...<br/>
-        our infrastructure steps up to provide you with the absolute<br/>
+      <div class="banner__darksub">When the lights go down...<br />
+        our infrastructure steps up to provide you with the absolute<br />
         bleeding-edge binaries of FusionDB and eXist-db
       </div><!-- banner__darksub-->
 
-        <div class="container">
-          <div class="menu menu__dark">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="index.html#about">About</a></li>
-                  <li><a href="index.html#services">Services</a></li>
-                  <li><a href="https://fusiondb.com">FusionDB</a></li>
-                  <li><a href="afterdark.html">After Dark</a></li>
-                  <li><a href="publications.html">Publications</a></li>
-                  <li><a href="index.html#exist-db-support">eXist-db</a></li>
-                  <li><a href="careers.html">Careers</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-          </div><!-- menu-->
-        </div><!-- container-->
+      <div class="container">
+        <div class="menu menu__dark">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="https://fusiondb.com">FusionDB</a></li>
+            <li><a href="afterdark.html">After Dark</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="index.html#exist-db-support">eXist-db</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div><!-- menu-->
+      </div><!-- container-->
 
-  </div> <!-- banner-->
+    </div> <!-- banner-->
 
-  <div class="main">
+    <div class="main">
       <div class="main__dark">
-            <div class="container"></div>
-        <h3 class="main__dark-text"><img src="images/icons/shape-icon-light.svg" class="shape" alt="Shape">Fusiondb Nightly Builds</h3>
-          <p class="main__dark-text-white">These distributions are built nightly from the development head of the FusionDB Server
-            source code. New builds will only appear when the source base changes, this means that there may not be a build for each
-            day if there were no changes committed to the project on that day. The files are signed by Evolved Binary.<br/>
-            <br/>
-            FusionDB is <i>not</i> Open Source. These FusionDB builds are made available under Evolved Binary's <a href="http://fusiondb.com/fusiondb-alpha-license-v1.html" title="FusionDB Alpha License v1.0">FusionDB Alpha License</a>.
-            These builds are suitable for non-commercial non-production purposes only. All builds require Java 8 or newer with JavaFX,
-            and include eXist-db compatibitity modules.<br/>
-            <br/>
-            Maven and Docker artifacts are available upon request from <a href="https://repo.evolvedbinary.com">https://repo.evolvedbinary.com</a>.
-          </p>
-
-            <div id="MyContent">
-              <div>
-                <table id="myTable" class="tablesorter tablesorter-default" role="grid">
-                  <thead>
-                    <tr role="row" class="tablesorter-headerRow">
-                      <th data-column="0" class="tablesorter-header tablesorter-headerDesc" tabindex="0" scope="col"
-                        role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="descending"
-                        aria-label="Date: Descending sort applied, activate to apply an ascending sort" style="user-select: none;">
-                        <div class="tablesorter-header-inner">Date</div>
-                      </th>
-                      <th data-column="1" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
-                        role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
-                        aria-label="Build Label: No sort applied, activate to apply an ascending sort" style="user-select: none;">
-                        <div class="tablesorter-header-inner">Build Label</div>
-                      </th>
-                      <th data-column="2" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
-                        role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
-                        aria-label="Git Hash: No sort applied, activate to apply an ascending sort" style="user-select: none;">
-                        <div class="tablesorter-header-inner">Git Hash</div>
-                      </th>
-                      <th data-column="3" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
-                        role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
-                        aria-label="Downloads: No sort applied, activate to apply an ascending sort" style="user-select: none;">
-                        <div class="tablesorter-header-inner">Downloads</div>
-                      </th>
-                      <th data-column="4" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
-                        role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
-                        aria-label="Size: No sort applied, activate to apply an ascending sort" style="user-select: none;">
-                        <div class="tablesorter-header-inner">Size</div>
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody aria-live="polite" aria-relevant="all">
-
-                    <!-- START FUSIONDB BUILD ITEMS -->
-                    <tr role="row">
-                      <td>2020-06-05</td>
-                      <td>1.0.0-ALPHA3-SNAPSHOT</td>
-                      <td><a href="https://github.com/evolvedbinary/fusiondb-server/commit/c561518">c561518</a></td>
-                      <td>|
-                        <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201.deb">DEB</a> |
-                        <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201.rpm">RPM</a> |
-                        <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201.dmg">DMG</a> |
-                        <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201-setup.exe">EXE</a> |
-                        <a href="fusiondb-server-1.0.0-SNAPSHOT-unix+20200524053201.tar.bz2">TAR BZ2</a> |
-                        <a href="fusiondb-server-1.0.0-SNAPSHOT-win+20200524053201.zip">ZIP</a> |
-                        <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201.sha256">(SHA 256)</a> |
-                      </td>
-                      <td>~466 MB</td>
-                    </tr>
-                    <!-- END FUSIONDB BUILD ITEMS -->
-
-                  </tbody>
-                </table>
-                <script>$(function () { $("#myTable").tablesorter({ sortList: [[0, 1]] }); }); </script>
-              </div>
-            </div>
-        </div><!-- main__dark-->
-
-      <div class="main__dark"></div>
-        <h3 class="main__dark-text"><img src="images/icons/shape-icon-light.svg" class="shape" alt="Shape">eXist-db Nightly
-          Builds</h3>
-        <p class="main__dark-text-white">These distributions are built nightly from the <em>develop</em> branch of the the eXist-db
-          project's GitHub: <a class="main__dark-a" href="https://github.com/exist-db/exist">https://github.com/exist-db/exist</a>.
-          New builds will only appear when the source base actually changes, this means that there may not be a build for each day if there were no
-          changes committed to the project on that day. The DMG and JAR files are signed by Evolved Binary and are provided to the community for
-          their convenience. All builds require Java 8 and include all eXist-db extensions.<br/>
-          <br/>
-          These eXist-db builds are made available under eXist-db's <a href="https://opensource.org/licenses/LGPL-2.1" title="GNU Lesser General Public License version 2.1">LGPL 2.1 license</a>. All
-          builds require Java 8 or newer, and include all eXist-db extension modules.<br/>
-          <br/>
-          Maven artifacts are available from <a href="https://repo.evolvedbinary.com/repository/exist-db-snapshots/">https://repo.evolvedbinary.com/repository/exist-db-snapshots/</a>.
+        <div class="container"></div>
+        <h3 class="main__dark-text"><img src="images/icons/shape-icon-light.svg" class="shape" alt="Shape">Fusiondb
+          Nightly Builds</h3>
+        <p class="main__dark-text-white">These distributions are built nightly from the development head of the FusionDB
+          Server
+          source code. New builds will only appear when the source base changes, this means that there may not be a
+          build for each
+          day if there were no changes committed to the project on that day. The files are signed by Evolved
+          Binary.<br />
+          <br />
+          FusionDB is <i>not</i> Open Source. These FusionDB builds are made available under Evolved Binary's <a
+            href="http://fusiondb.com/fusiondb-alpha-license-v1.html" title="FusionDB Alpha License v1.0">FusionDB Alpha
+            License</a>.
+          These builds are suitable for non-commercial non-production purposes only. All builds require Java 8 or newer
+          with JavaFX,
+          and include eXist-db compatibitity modules.<br />
+          <br />
+          Maven and Docker artifacts are available upon request from <a
+            href="https://repo.evolvedbinary.com">https://repo.evolvedbinary.com</a>.
         </p>
 
         <div id="MyContent">
@@ -208,23 +150,28 @@
               <thead>
                 <tr role="row" class="tablesorter-headerRow">
                   <th data-column="0" class="tablesorter-header tablesorter-headerDesc" tabindex="0" scope="col"
-                    role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="descending"
-                    aria-label="Date: Descending sort applied, activate to apply an ascending sort" style="user-select: none;">
+                    role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on"
+                    aria-sort="descending"
+                    aria-label="Date: Descending sort applied, activate to apply an ascending sort"
+                    style="user-select: none;">
                     <div class="tablesorter-header-inner">Date</div>
                   </th>
                   <th data-column="1" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
                     role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
-                    aria-label="Build Label: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                    aria-label="Build Label: No sort applied, activate to apply an ascending sort"
+                    style="user-select: none;">
                     <div class="tablesorter-header-inner">Build Label</div>
                   </th>
                   <th data-column="2" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
                     role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
-                    aria-label="Git Hash: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                    aria-label="Git Hash: No sort applied, activate to apply an ascending sort"
+                    style="user-select: none;">
                     <div class="tablesorter-header-inner">Git Hash</div>
                   </th>
                   <th data-column="3" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
                     role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
-                    aria-label="Downloads: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                    aria-label="Downloads: No sort applied, activate to apply an ascending sort"
+                    style="user-select: none;">
                     <div class="tablesorter-header-inner">Downloads</div>
                   </th>
                   <th data-column="4" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
@@ -236,100 +183,176 @@
               </thead>
               <tbody aria-live="polite" aria-relevant="all">
 
-                <!-- START EXIST-DB BUILD ITEMS -->
+                <!-- START FUSIONDB BUILD ITEMS -->
                 <tr role="row">
                   <td>2020-06-05</td>
-                  <td>5.3.0-SNAPSHOT</td>
-                  <td><a href="https://github.com/eXist-db/exist/commit/e607599">e607599</a></td>
+                  <td>1.0.0-ALPHA3-SNAPSHOT</td>
+                  <td><a href="https://github.com/evolvedbinary/fusiondb-server/commit/c561518">c561518</a></td>
                   <td>|
-                    <a href="eXist-db-setup-5.0.0-SNAPSHOT+201808280404.jar">JAR</a> |
-                    <a href="eXist-db-5.0.0-SNAPSHOT+201808280404.dmg">DMG</a> |
-                    <a href="eXist-db-5.0.0-SNAPSHOT+201808280404.tar.bz2">TAR BZ2</a> |
-                    <a href="eXist-db-5.0.0-SNAPSHOT+201808280404.zip">ZIP</a> |
-                    <a href="eXist-db-5.0.0-SNAPSHOT+201808280404.sha256">(SHA 256)</a> |
+                    <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201.deb">DEB</a> |
+                    <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201.rpm">RPM</a> |
+                    <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201.dmg">DMG</a> |
+                    <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201-setup.exe">EXE</a> |
+                    <a href="fusiondb-server-1.0.0-SNAPSHOT-unix+20200524053201.tar.bz2">TAR BZ2</a> |
+                    <a href="fusiondb-server-1.0.0-SNAPSHOT-win+20200524053201.zip">ZIP</a> |
+                    <a href="fusiondb-server-1.0.0-SNAPSHOT+20200524053201.sha256">(SHA 256)</a> |
                   </td>
-                  <td>~199 MB</td>
+                  <td>~466 MB</td>
                 </tr>
-                <!-- END EXIST-DB BUILD ITEMS -->
+                <!-- END FUSIONDB BUILD ITEMS -->
 
               </tbody>
             </table>
-            <script>$(function () { $("#myTable").tablesorter({ sortList: [[0, 1]] }); }); </script>
+            <script>$(function () { $("#myTable").tablesorter({ sortList: [[0, 1]] }); });</script>
           </div>
         </div>
       </div><!-- main__dark-->
-    </div>
+
+      <div class="main__dark"></div>
+      <h3 class="main__dark-text"><img src="images/icons/shape-icon-light.svg" class="shape" alt="Shape">eXist-db
+        Nightly
+        Builds</h3>
+      <p class="main__dark-text-white">These distributions are built nightly from the <em>develop</em> branch of the the
+        eXist-db
+        project's GitHub: <a class="main__dark-a"
+          href="https://github.com/exist-db/exist">https://github.com/exist-db/exist</a>.
+        New builds will only appear when the source base actually changes, this means that there may not be a build for
+        each day if there were no
+        changes committed to the project on that day. The DMG and JAR files are signed by Evolved Binary and are
+        provided to the community for
+        their convenience. All builds require Java 8 and include all eXist-db extensions.<br />
+        <br />
+        These eXist-db builds are made available under eXist-db's <a href="https://opensource.org/licenses/LGPL-2.1"
+          title="GNU Lesser General Public License version 2.1">LGPL 2.1 license</a>. All
+        builds require Java 8 or newer, and include all eXist-db extension modules.<br />
+        <br />
+        Maven artifacts are available from <a
+          href="https://repo.evolvedbinary.com/repository/exist-db-snapshots/">https://repo.evolvedbinary.com/repository/exist-db-snapshots/</a>.
+      </p>
+
+      <div id="MyContent">
+        <div>
+          <table id="myTable" class="tablesorter tablesorter-default" role="grid">
+            <thead>
+              <tr role="row" class="tablesorter-headerRow">
+                <th data-column="0" class="tablesorter-header tablesorter-headerDesc" tabindex="0" scope="col"
+                  role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on"
+                  aria-sort="descending" aria-label="Date: Descending sort applied, activate to apply an ascending sort"
+                  style="user-select: none;">
+                  <div class="tablesorter-header-inner">Date</div>
+                </th>
+                <th data-column="1" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
+                  role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
+                  aria-label="Build Label: No sort applied, activate to apply an ascending sort"
+                  style="user-select: none;">
+                  <div class="tablesorter-header-inner">Build Label</div>
+                </th>
+                <th data-column="2" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
+                  role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
+                  aria-label="Git Hash: No sort applied, activate to apply an ascending sort"
+                  style="user-select: none;">
+                  <div class="tablesorter-header-inner">Git Hash</div>
+                </th>
+                <th data-column="3" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
+                  role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
+                  aria-label="Downloads: No sort applied, activate to apply an ascending sort"
+                  style="user-select: none;">
+                  <div class="tablesorter-header-inner">Downloads</div>
+                </th>
+                <th data-column="4" class="tablesorter-header tablesorter-headerUnSorted" tabindex="0" scope="col"
+                  role="columnheader" aria-disabled="false" aria-controls="myTable" unselectable="on" aria-sort="none"
+                  aria-label="Size: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                  <div class="tablesorter-header-inner">Size</div>
+                </th>
+              </tr>
+            </thead>
+            <tbody aria-live="polite" aria-relevant="all">
+
+              <!-- START EXIST-DB BUILD ITEMS -->
+              <tr role="row">
+                <td>2020-06-05</td>
+                <td>5.3.0-SNAPSHOT</td>
+                <td><a href="https://github.com/eXist-db/exist/commit/e607599">e607599</a></td>
+                <td>|
+                  <a href="eXist-db-setup-5.0.0-SNAPSHOT+201808280404.jar">JAR</a> |
+                  <a href="eXist-db-5.0.0-SNAPSHOT+201808280404.dmg">DMG</a> |
+                  <a href="eXist-db-5.0.0-SNAPSHOT+201808280404.tar.bz2">TAR BZ2</a> |
+                  <a href="eXist-db-5.0.0-SNAPSHOT+201808280404.zip">ZIP</a> |
+                  <a href="eXist-db-5.0.0-SNAPSHOT+201808280404.sha256">(SHA 256)</a> |
+                </td>
+                <td>~199 MB</td>
+              </tr>
+              <!-- END EXIST-DB BUILD ITEMS -->
+
+            </tbody>
+          </table>
+          <script>$(function () { $("#myTable").tablesorter({ sortList: [[0, 1]] }); });</script>
+        </div>
+      </div>
+    </div><!-- main__dark-->
+  </div>
   </div><!-- main-->
 
   </div><!-- .wrapper -->
 
-    <div class="footer footer__dark">
-        <div class="footer__evolve--logo">
-          <a href="index.html"><img class="footer__logo" src="images/icons/ev-logo-white.svg" alt="Link to Evolved Binary Home page"></a>
-        </div><!-- .footer__fusion--logo -->
+  <div class="footer footer__dark">
+    <div class="footer__evolve--logo">
+      <a href="index.html"><img class="footer__logo" src="images/icons/ev-logo-white.svg"
+          alt="Link to Evolved Binary Home page"></a>
+    </div><!-- .footer__fusion--logo -->
 
-        <!-- <div class="container"> -->
-          <div class="footer-menu">
-            <nav>
-              <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="https://fusiondb.com">FusionDB</a></li>
-                <li><a href="afterdark.html">After Dark</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="index.html#exist-db-support">eXist-db</a></li>
-                <li><a href="careers.html">Careers</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
-            </nav>
-          </div><!-- menu-->
+    <div class="footer__fusion--logo">
+      <a href="https://fusiondb.com/"><img class="fusion-logo" src="images/icons/FusionDB-Logo-white.svg"
+          alt="Link to FusionDB Website"></a>
+    </div><!-- .footer__evolve--logo -->
 
-        <div class="footer__fusion--logo">
-          <a href="https://fusiondb.com/"><img class="fusion-logo" src="images/icons/FusionDB-Logo-white.svg" alt="Link to FusionDB Website"></a>
-              </div><!-- .footer__evolve--logo -->
+    <div class="footer__icons">
+      <div class="footer__icons--block">
+        <a href="https://twitter.com/fdbnosql"><img src="images/icons/ev-twitter-icon.svg"
+            alt="link to FusionDB on Twitter" class="social-footer social-footer--twitter"></a>
+        <a href="https://github.com/evolvedbinary"><img src="images/icons/ev-github-icon.svg"
+            alt="link to EvolvedBinary's Github" class="social-footer"></a>
+        <a href="mailto:hello@evolvedbinary.com"><img src="images/icons/ev-email-icon.svg" alt="link to email"
+            class="social-footer"></a>
+      </div>
+      <span class="footer__icons--head">FOLLOW US | CONTACT</span>
+    </div><!-- .footer__icons -->
 
-        <div class="footer__icons">
-          <a href="https://twitter.com/fdbnosql"><img src="images/icons/ev-twitter-icon.svg" alt="link to FusionDB on Twitter" class="social-footer social-footer--twitter"></a>
-          <a href="https://github.com/evolvedbinary"><img src="images/icons/ev-github-icon.svg" alt="link to EvolvedBinary's Github" class="social-footer"></a>
-          <a href="mailto:hello@evolvedbinary.com"><img src="images/icons/ev-email-icon.svg" alt="link to email" class="social-footer"></a>
+    <div class="footer__bottom">
+      <div class="footer__copyright">
+        &#xA9; COPYRIGHT 2019 &#x2022; EVOLVED BINARY &#x2022; ALL RIGHTS RESERVED.
+        <br />
+        <div class="footer__craig">
+          Design - <a href="https://craigsteel-design.com/">craig steel design</a>
+        </div>
+      </div>
+    </div><!-- .footer__bottom -->
+  </div><!-- .footer -->
 
-          <span class="footer__icons--head">FOLLOW US | CONTACT</span>
-        </div><!-- .footer__icons -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script>
+    $.get("table.html", function (data) {
+      $('#MyContent').html(data);
+    });
+  </script>
 
-        <div class="footer__bottom">
-          <div class="footer__copyright">
-            &#xA9; COPYRIGHT 2019 &#x2022; EVOLVED BINARY &#x2022; ALL RIGHTS RESERVED.
-            <br/>
-            <div class="footer__craig">
-              Design - <a href="https://craigsteel-design.com/">craig steel design</a>
-            </div>
-          </div>
-        </div><!-- .footer__bottom -->
-    </div><!-- .footer -->
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script>
-      $.get("table.html", function (data) {
-        $('#MyContent').html(data);
-      });
-    </script>
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.0/js/jquery.tablesorter.min.js"
-      integrity="sha256-acv8cDk9JudHQNeVi5RRlLq3/mEg/KWYrBhxYjVGgTc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.28.0/js/jquery.tablesorter.min.js"
+    integrity="sha256-acv8cDk9JudHQNeVi5RRlLq3/mEg/KWYrBhxYjVGgTc=" crossorigin="anonymous"></script>
 
-    <script>
-      $(function () {
-        $("#myTable").tablesorter({ sortList: [[0, 1]] });
-      });
-    </script>
+  <script>
+    $(function () {
+      $("#myTable").tablesorter({ sortList: [[0, 1]] });
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>
