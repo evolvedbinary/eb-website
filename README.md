@@ -22,6 +22,7 @@ From your Terminal, run:
 git clone https://github.com/evolvedbinary/eb-website.git
 
 cd eb-website
+npm install -g gulp-cli
 npm install
 ```
 
