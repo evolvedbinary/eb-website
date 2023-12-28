@@ -30,6 +30,12 @@ function jobsFn() {
     .pipe(dest(DIST_PATH));
 }
 
+// copy the Training Adverts
+function trainingAdvertsFn() {
+  return src(SRC_PATH + "/training*/**/*", { ignore: "**/*.html" })
+    .pipe(dest(DIST_PATH));
+}
+
 // other static resorces
 function othersFn() {
   return src(SRC_PATH + "/LICENSE.txt")
@@ -41,6 +47,7 @@ staticsFn = parallel(
     techReportsFn,
     publicationsFn,
     jobsFn,
+    trainingAdvertsFn,
     othersFn
 );
 
